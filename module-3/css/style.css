@@ -43,13 +43,11 @@ a:hover {
 .content:nth-child(-n + 2) {
   margin-top: 0;
 }
-.content:nth-child(5){
+.content:nth-last-of-type(-n + 2) {
   margin-bottom: 0;
 }
-.content:nth-child(6){
-  margin-bottom: 0;
-}
-.signs  {
+
+.signs {
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   color: #b4ad9e;
