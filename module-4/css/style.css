@@ -33,8 +33,11 @@ header li > a {
   color: #1abc9c;
   font-weight: 900;
 }
-.navigation li {
+.navigation>ul{
   float: right;
+}
+.navigation li {
+  float: left;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
