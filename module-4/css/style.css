@@ -17,11 +17,11 @@ a {
   content: "";
   clear: both;
 }
-header a {
+h1 a {
   color: #555252;
 }
 
-header li > a {
+nav a {
   color: #0f0101;
 }
 .logo {
@@ -44,7 +44,7 @@ header li > a {
   text-transform: uppercase;
   margin-top: 26px;
 }
-.navigation > ul {
+nav >ul {
   float: right;
 }
 .navigation li:nth-last-child(1) {
@@ -103,7 +103,7 @@ h2::after {
   background: rgba(255, 255, 255, 0.5);
 }
 .price,
-h3 {
+.product {
   float: left;
   font-size: 18px;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ h3 {
   padding-top: 10px;
 }
 
-h3 {
+.product {
   width: 200px;
   height: 40px;
   padding-left: 13px;
@@ -157,15 +157,12 @@ h3 {
   color: #555252;
   line-height: 26px;
 }
-button a{
-  color:#ffffff
-}
-button {
+.news>a  {
+  display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #ffffff;
-  cursor: pointer;
   background: #4ec6ab;
   padding: 18px 40px;
   border-radius: 3px;
