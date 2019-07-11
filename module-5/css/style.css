@@ -63,7 +63,6 @@ nav a {
 }
 /* Slider */
 .slider {
-  display: inline-block;
   position: relative;
 }
 .slider-img {
@@ -71,7 +70,8 @@ nav a {
   width: 100%;
   object-fit: cover;
 }
-.overlay {
+.slider::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -142,7 +142,7 @@ main{
   display: inline-block;
   margin-right: 30px;
   margin-bottom: 95px;
-  cursor: pointer;
+  
 }
 
 .product-item:nth-last-child(1) {
@@ -151,8 +151,9 @@ main{
 
 .product-description {
   background: #323232;
+  width: 255px;
 }
-.product {
+.product a {
   padding: 11px 0 0 13px;
   float: left;
   font-size: 18px;
@@ -175,6 +176,7 @@ main{
 }
 .product-image {
   position: relative;
+  width: 100%;
 }
 .product-overlay {
   position: absolute;
@@ -184,6 +186,7 @@ main{
   left: 10px;
   background: rgba(0, 0, 2, 0.5);
   opacity: 0;
+  width: 235px;
 }
 .product-button{
   position: absolute;
