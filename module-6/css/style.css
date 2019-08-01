@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.size {
+.content {
   width: 1200px;
   margin: 0 auto;
 }
@@ -94,6 +94,7 @@ header {
   margin-top: 100px;
 }
 .title-2-descr {
+  display: flex;
   font-size: 15px;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
@@ -140,7 +141,6 @@ header {
   font-size: 14px;
 }
 .service-descr {
-  display: inline-block;
   margin-top: 10px;
   color: #999999;
   font-family: "Roboto", sans-serif;
@@ -150,22 +150,22 @@ header {
 }
 /* Icons */
 .icon-alarm::before {
-  background-image: url(../icon/ALARM.png);
+  background-image: url(../icon/alarm.png);
 }
 .icon-line_graph::before {
-  background-image: url(../icon/LINE_GRAPH.png);
+  background-image: url(../icon/line__graph.png);
 }
 .icon-computer::before {
-  background-image: url(../icon/COMPUTER.png);
+  background-image: url(../icon/computer.png);
 }
 .icon-book::before {
-  background-image: url(../icon/BOOK.png);
+  background-image: url(../icon/book.png);
 }
 .icon-home::before {
-  background-image: url(../icon/HOME.png);
+  background-image: url(../icon/home.png);
 }
 .icon-image::before {
-  background-image: url(../icon/IMAGE.png);
+  background-image: url(../icon/image.png);
 }
 /* Team */
 .team-list {
@@ -173,6 +173,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .team-item:hover .overlay {
   visibility: visible;
   top: -10px;
@@ -192,6 +193,7 @@ header {
   left: -10px;
 }
 .team-photo {
+  width: 100%;
   position: relative;
   background-color: #95e1d3;
   font-size: 0;
