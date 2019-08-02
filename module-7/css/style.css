@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script|Montserrat:300,400,500,600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  width: 940px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  font-family: "Wisdom-Script";
+  font-size: 26px;
+  color: #fed136;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+}
+.navigation a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.navigation li {
+  margin-right: 45px;
+}
+.navigation li:nth-last-child(1) {
+  margin-right: 0;
+}
+.navigation a:hover {
+  color: #fed136;
+}
+
+/* Services */
+.title1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  margin: 125px 0 20px;
+}
+.title1-descr {
+  text-align: center;
+  font-family: "DroidSerifItalic", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 80px;
+}
+.services-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services-item {
+  flex: 0 290px;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+.services-item a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #222222;
+  letter-spacing: -0.025em;
+}
+.service-descr {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: #777777;
+  letter-spacing: -0.025em;
+  line-height: 25px;
+  margin-top: 18px;
+}
+.services-item::before {
+  align-items: center;
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Icons */
+.icon-basket::before {
+  background-image: url(../icons/icon_basket.png);
+}
+.icon-laptop::before {
+  background-image: url(../icons/icon_laptop.png);
+}
+.icon-locked::before {
+  background-image: url(../icons/icon_locked.png);
+}
+/* Contact Us */
+.contact-us {
+  margin-top: 118px;
+  background-image: url(../img/Map-Image.png);
+  height: 676px;
+  object-fit: cover;
+}
+.title2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  text-align: center;
+  padding-top: 110px;
+}
+.title2-descr {
+  font-family: "DroidSerifItalic", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #777777;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.mail-forms {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+  justify-content: space-between;
+}
+.mail-forms input {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+  color: #222222;
+  padding: 18px;
+}
+.mail-text-forms {
+  display: flex;
+  justify-content: space-between;
+  height: 210px;
+}
+.mail-text-forms textarea {
+  width: 455px;
+  resize: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+  color: #bbbbbb;
+  padding: 18px;
+  color: #222222;
+}
+input::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+.send-message {
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+  margin-top: 30px;
+}
+#name:focus:valid,
+#name:active:valid,
+#email:focus:valid,
+#email:active:valid,
+#message:focus:valid,
+#message:active:valid {
+  outline: 2px solid green;
+}
+#name:focus:invalid,
+#name:active:invalid,
+#email:focus:invalid,
+#email:active:invalid,
+#message:focus:invalid,
+#message:active:invalid {
+  outline: 2px solid red;
+}
