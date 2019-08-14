@@ -17,7 +17,7 @@
     margin: 0;
   }
   .background section {
-    width: 530px;
+    width: 540px;
   }
 
   .share h2 {
@@ -63,11 +63,11 @@
 }
 @media screen and (min-width: 940px) {
   header {
-    width: 940px;
+  width: 940px;
   }
 
   body .content {
-    width: 940px;
+  width: 940px;
   }
   .partners {
     flex-wrap: nowrap;

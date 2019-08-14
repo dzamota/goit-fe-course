@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+  header .registration {
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .header {
+    padding: 20px 0 140px;
+  }
+  header .logo {
+    margin: 0;
+    text-align: left;
+  }
+  .share {
+    max-width: 540px;
+  }
+  .share h2 {
+    font-size: 52px;
+  }
+  header .share-title-descr {
+    font-size: 24px;
+  }
+  .partner {
+    padding-top: 30px;
+  }
+  .partners-section h2 {
+    max-width: 420px;
+  }
+  .partner:nth-child(2) {
+    order: 3;
+  }
+  .partner:nth-child(3) {
+    order: 2;
+  }
+  .partner:nth-child(4) {
+    order: 4;
+  }
+
+  .see-other {
+    margin: 35px 0 40px;
+  }
+}

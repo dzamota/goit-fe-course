@@ -1,6 +1,8 @@
 @import "./normalize.css";
 @import "./fonts.css";
+@import "./bootstrap-grid.css";
 @import "./media.css";
+
 *,
 *::before,
 *::after {
@@ -12,17 +14,20 @@
 a {
   text-decoration: none;
 }
-/* Header */
 .background {
   background-image: url(../img/header-background.png);
   background-color: #1a1915;
   background-position: center;
   background-size: cover;
 }
+header {
+  max-width: 340px;
+}
+
 .registration {
-  padding-top: 10px;
-  text-align: center;
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 110px;
 }
 .registration button {
   font-family: "Montserrat", sans-serif;
@@ -53,7 +58,6 @@ a {
 }
 .share {
   text-align: center;
-  width: 300px;
   margin: 0 auto;
 }
 .share-title {
@@ -74,42 +78,45 @@ a {
   padding: 18px 30px 0 30px;
   text-align: center;
 }
-.share a {
+#find {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
-  padding: 13px 50px;
+  padding: 13px 0 13px;
+  text-align: center;
   background-color: #ff4e50;
   border-radius: 25px;
   margin: 18px 0 138px;
   display: inline-block;
 }
-/* Partners */
-.content {
-  padding: 70px 0 70px;
-  text-align: center;
-  width: 300px;
-  margin: 0 auto;
+main {
+  display: block;
+  max-width: 320px;
 }
 .meet {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #333333;
-  max-width: 266px;
   text-align: center;
+  justify-content: center;
+  max-width: 266px;
+  margin: 0 auto;
+}
+.partners-section {
+  text-align: center;
+  margin-top: 75px;
 }
 .partners {
   list-style-type: none;
 }
-.partners li{
-  justify-content: center;
+.partner {
+  max-width: 240px;
 }
 .partner img {
   padding-top: 20px;
 }
-
 .partner h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -124,14 +131,13 @@ a {
   color: #666666;
   padding: 0 20px 0 20px;
 }
-
 .see-other {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #ff4e50;
   border: 2px solid #ff4e50;
-  padding: 13px 70px;
+  padding: 13px 0 13px;
   border-radius: 25px;
   display: inline-block;
   text-align: center;
