@@ -37,6 +37,10 @@
   body .content {
     width: 500px;
   }
+  section .meet{
+    max-width: 420px;
+    display: inline-block;
+  }
   .partners {
     display: flex;
     flex-wrap: wrap;
