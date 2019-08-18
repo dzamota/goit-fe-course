@@ -103,6 +103,7 @@ main {
   justify-content: center;
   max-width: 266px;
   margin: 0 auto;
+  padding-bottom: 35px;
 }
 .partners-section {
   text-align: center;
@@ -113,9 +114,11 @@ main {
 }
 .partner {
   max-width: 240px;
+    margin-bottom: 30px;
+
 }
-.partner img {
-  padding-top: 20px;
+.partner img{
+  border-radius: 50%;
 }
 .partner h3 {
   font-family: "Montserrat", sans-serif;
@@ -148,4 +151,42 @@ main {
 }
 .partner:nth-last-child(1) {
   margin-bottom: 30px;
+}
+/* Icons */
+.partner-icon{
+  position: relative;
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+}
+.partner-icon::after{
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  border: 4px solid #ffffff;
+  bottom: 0;
+right: 0;
+
+}
+.partner1::after{
+  background: url(../img/partners/partner1_icon.png) #ff4e50;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.partner2::after{
+  background: url(../img/partners/partner2_icon.png) #1cd7ad;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.partner3::after{
+  background: url(../img/partners/partner3_icon.png) #ffa507;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.partner4::after{
+  background: url(../img/partners/partner4_icon.png) #4e73db;
+  background-repeat: no-repeat;
+  background-position: center;
 }

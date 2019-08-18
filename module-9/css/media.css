@@ -19,14 +19,11 @@
   header .share-title-descr {
     font-size: 24px;
   }
-  .partner {
-    padding-top: 30px;
-  }
   .partners-section h2 {
     max-width: 420px;
   }
   .partner:nth-child(2) {
-    order: 3;
+    order: 3 ;
   }
   .partner:nth-child(3) {
     order: 2;
