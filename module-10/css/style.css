@@ -27,11 +27,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 30px;
 }
 .navigation-list {
@@ -40,16 +40,17 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .banner-wrapper {
   background-image: -webkit-gradient(
       linear,
-      left bottom, left top,
+      left bottom,
+      left top,
       from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))
     ),
@@ -115,11 +116,11 @@ li {
   text-align: center;
 }
 .title__item {
+  display: block;
   font-family: "Kaushan Script", cursive;
   font-size: 72px;
   font-weight: 400;
   color: #ffffff;
-  margin-top: 170px;
   text-transform: none;
 }
 .banner-title {
@@ -132,6 +133,7 @@ li {
   font-size: 150px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 .banner-title__link {
   font-family: "Montserrat", sans-serif;
@@ -145,21 +147,13 @@ li {
 }
 /* Services */
 .services-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 30px;
   color: #333333;
-  text-transform: uppercase;
   margin: 50px 0 65px;
-  text-align: center;
 }
 .services-title__item {
-  display: block;
-  font-family: "Kaushan Script", cursive;
   font-size: 24px;
-  font-weight: 400;
   color: #333333;
-  text-transform: none;
   margin-bottom: 25px;
 }
 .services-title::after {
@@ -176,10 +170,10 @@ li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .services-list__item {
   width: 390px;
@@ -195,7 +189,7 @@ li {
 .services-list__icon-container {
   text-align: center;
   -ms-flex-preferred-size: 90px;
-      flex-basis: 90px;
+  flex-basis: 90px;
 }
 .services-list__icon {
   fill: #95e1d3;
@@ -222,20 +216,14 @@ li {
 }
 /* Team */
 .team-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 30px;
   color: #333333;
-  text-transform: uppercase;
   text-align: center;
+  margin-top: 90px;
 }
 .team-title__item {
-  display: block;
-  font-family: "Kaushan Script", cursive;
   font-size: 24px;
-  font-weight: 400;
   color: #333333;
-  text-transform: none;
   margin-bottom: 25px;
 }
 .team-title::after {
@@ -261,9 +249,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .team-list__member-photo {
@@ -282,14 +269,15 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: -webkit-gradient(
     linear,
-    left bottom, left top,
+    left bottom,
+    left top,
     from(rgba(252, 227, 138, 0.9)),
     to(rgba(243, 129, 129, 0.9))
   );
@@ -305,8 +293,8 @@ li {
   );
   visibility: hidden;
   -webkit-transition-duration: 200ms;
-       -o-transition-duration: 200ms;
-          transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 .team-list__social-icons svg {
   fill: #f38181;
@@ -320,11 +308,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 2px;
 }
 .team-list__social-icons:nth-last-child(1) {
@@ -356,21 +344,20 @@ li {
   -o-transition-property: left, top;
   transition-property: left, top;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-.team-list__member-name{
+.team-list__member-name {
   text-align: center;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
-  
 }
-.team-list__member-profession{
+.team-list__member-profession {
   display: block;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
@@ -385,11 +372,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 60px;
 }
 .footer-text {
@@ -417,11 +404,11 @@ footer {
   display: flex;
   height: 40px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 input:-moz-placeholder {
