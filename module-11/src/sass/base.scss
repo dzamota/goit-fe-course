@@ -42,3 +42,22 @@
     url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
     url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff");
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

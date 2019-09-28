@@ -70,8 +70,9 @@ li {
   height: 1000px;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
-@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner-wrapper {
     background-image: -webkit-gradient(
         linear,
@@ -96,7 +97,7 @@ li {
     height: 1000px;
     background-position: center;
     background-size: cover;
-  } 
+  }
 }
 .navigation__logo a {
   font-family: "Montserrat", sans-serif;
@@ -142,7 +143,12 @@ li {
 /* Title */
 .banner {
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
+
 .title__item {
   display: block;
   font-family: "Kaushan Script", cursive;
@@ -279,6 +285,9 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.team-list__member{
+  width: 380px;
 }
 
 .team-list__member-photo {

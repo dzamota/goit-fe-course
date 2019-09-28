@@ -1,0 +1,66 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.navigation-list {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__logo a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.navigation-list__link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.navigation-list__link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.navigation-list__link:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fce38a;
+  margin-top: 10px;
+}
+
+.navigation-list__link:hover {
+  color: #fce38a;
+}
+
+.navigation-list__link svg:hover {
+  fill: #fce38a;
+}
+
+.navigation-list__link svg {
+  width: 20px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+.icon-cart use{
+  width: 20px;
+  height: 18px;
+  fill: #ffffff;
+}
