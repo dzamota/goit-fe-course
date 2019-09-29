@@ -1,0 +1,59 @@
+
+.banner-title {
+  margin: 40px 0 125px;
+  line-height: 140px;
+
+  &__link {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    color: $main-color;
+    text-transform: uppercase;
+    border: 3px solid $main-color;
+    padding: 10px 25px;
+    margin-top: 125px;
+  }
+}
+
+.title {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 150px;
+  color: $main-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  &__item {
+    display: block;
+    font-family: $secondary-title-font;
+    font-size: 72px;
+    font-weight: 400;
+    color: $main-color;
+    text-transform: none;
+  }
+  
+}
+
+
+.services-title {
+  font-size: 30px;
+  color: $main-text-color;
+  margin: 50px 0 65px;
+
+  &__item {
+    font-size: 24px;
+    color: $main-text-color;
+    margin-bottom: 25px;
+  }
+
+  &::after {
+    @extend %pseudo-element;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+  
+}
+

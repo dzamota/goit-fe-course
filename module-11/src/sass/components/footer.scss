@@ -1,0 +1,44 @@
+.footer {
+  border-top: 1px solid #e7e7e7;
+  @include flex-set(flex, center, space-between);
+  min-height: 60px;
+
+  &__text {
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: $main-text-color;
+  }
+  
+  &__text-link {
+    color: #f38181;
+  }
+
+  &__form {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+#your-email {
+  font-family: $secondary-font;
+  font-size: 15px;
+  width: 230px;
+  background-color: $main-color;
+  border: 1px solid #e7e7e7;
+  padding: 0 10px;
+}
+
+.footer__form-input {
+  font-family: $main-font;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+}

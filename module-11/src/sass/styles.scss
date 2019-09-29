@@ -1,10 +1,15 @@
-/*
-   Import partials below
-*/
-@import './normalize';
-@import './base';
-@import './header';
-@import './banner';
-@import './services';
-@import './team';
-@import './footer';
+@import 'helpers/mixins';
+@import 'helpers/variables';
+@import 'helpers/selectors';
+
+
+@import 'normalize';
+@import 'base';
+
+@import 'components/navigation';
+@import 'components/titles';
+@import 'components/banner';
+@import 'components/services';
+@import 'components/team';
+@import 'components/icon-width';
+@import 'components/footer';

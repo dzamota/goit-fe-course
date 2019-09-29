@@ -1,0 +1,56 @@
+.navigation {
+  @include flex-set(flex, center, space-between);
+  padding-top: 30px;
+
+  &__logo a {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 30px;
+    color: $main-color;
+  }
+  
+}
+
+.navigation-list {
+  width: 620px;
+  @include flex-set(flex, center, space-between);
+
+  &__link {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $main-color;
+    text-transform: uppercase;
+  
+    &::after {
+      @extend %pseudo-element;
+      width: 100%;
+      height: 3px;
+      background-color: transparent;
+      margin-top: 10px;
+    }
+  
+    &:hover::after {
+      @extend %pseudo-element;
+      width: 100%;
+      height: 3px;
+      background-color: $link-hover-color;
+      margin-top: 10px;
+    }
+  
+    &:hover {
+      color: $link-hover-color;
+    }
+    
+    & svg:hover {
+      fill: $link-hover-color;
+    }
+    
+    & svg {
+      width: 20px;
+      height: 18px;
+      fill: $main-color;
+    }
+  }
+}
+
